@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.winterrunner.serialportdemo.MainActivity">
+    <TextView
+        android:hint="收到的内容显示到这里"
+        android:id="@+id/tv_receive"
+        android:textColor="#00f"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:padding="10dp"
+            android:textColor="#f00"
+            android:gravity="center"
+            android:text="发送数据"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_content"
+            android:background="#ffffffff"
+            android:textColor="#333333"
+            android:textSize="18dp"
+            android:hint="请输入要发送的内容"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <Button
+            android:onClick="send"
+            android:text="发送"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
